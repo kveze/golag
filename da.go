@@ -1,11 +1,18 @@
 package main
 import (
 	"fmt"
-	// "math/rand"
+	"os"
 )
 func main() {
-	
-	fmt.Scanln()
+    var name string
+    var age int
+    fmt.Print("Введите имя: ")
+    fmt.Fscan(os.Stdin, &name) 
+     
+    fmt.Print("Введите возраст: ")
+    fmt.Fscan(os.Stdin, &age)
+     
+    fmt.Println(name, age)
 }
 // func da(x int) {
 // 	for i := 1; i <= 5; i++ {
